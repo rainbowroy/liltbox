@@ -1,0 +1,53 @@
+name: 问题反馈 / Bug report
+description: 报告应用故障或异常行为 / Report a problem with Liltbox.
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        欢迎使用中文或英文。提交前请搜索已有 Issue，避免重复。
+        Chinese and English are welcome. Please check existing issues first.
+
+        此页面公开可见，请勿上传私人录音、对话原文、凭据或未经脱敏的日志。
+        This page is public. Remove private audio, transcripts, credentials, and personal information from logs and screenshots.
+  - type: input
+    id: app-version
+    attributes:
+      label: 应用版本 / App version
+      placeholder: "例如 / e.g. 0.2.3"
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Mac 与系统 / Mac and macOS
+      description: "请填写芯片、内存和 macOS 版本 / Include your chip, memory, and macOS version."
+      placeholder: "例如 / e.g. M4 Pro, 24 GB, macOS 26.6.2"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 问题与复现步骤 / Problem and steps to reproduce
+      description: "从哪里开始操作，何时出现问题？ / What did you do, and when did the problem occur?"
+      placeholder: |
+        1. 打开… / Open…
+        2. 点击… / Select…
+        3. 出现… / Observe…
+    validations:
+      required: true
+  - type: textarea
+    id: expected-actual
+    attributes:
+      label: 预期与实际结果 / Expected and actual behavior
+      placeholder: |
+        预期 / Expected:
+        实际 / Actual:
+    validations:
+      required: true
+  - type: textarea
+    id: supporting-info
+    attributes:
+      label: 补充信息 / Additional information
+      description: "可选：脱敏截图、错误提示、音频格式及长度、是否每次出现。无需提供原始录音。 / Optional: redacted screenshots, error messages, audio format and duration, and how often it happens. Original audio is not required."

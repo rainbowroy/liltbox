@@ -1,0 +1,32 @@
+name: 功能建议 / Feature request
+description: 提出产品改进建议 / Suggest an improvement to Liltbox.
+title: "[Feature] "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        欢迎使用中文或英文。请先搜索已有建议；使用问题可前往 Discussions 的使用问答。
+        Chinese and English are welcome. Please check existing requests first; usage questions belong in Discussions.
+
+        此页面公开可见，请勿填写私人对话或个人敏感信息。
+        This page is public. Do not include private conversations or sensitive personal information.
+  - type: textarea
+    id: need
+    attributes:
+      label: 使用场景与困难 / Use case and problem
+      description: "你想完成什么？当前遇到了什么困难？ / What are you trying to do, and what makes it difficult today?"
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 希望的改进 / Suggested improvement
+      description: "描述你期望的使用方式或结果 / Describe the workflow or outcome you would like."
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 替代方式与补充信息 / Alternatives and context
+      description: "可选：目前如何解决、使用频率或脱敏示例 / Optional: your current workaround, frequency of use, or a redacted example."
